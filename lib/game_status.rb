@@ -30,7 +30,7 @@ def over?(board)
 end
 
 def winner(board)
-  if over?(board) == false
+  if over?(board) == true
     won?(board)[0]
   else
     nil
