@@ -14,32 +14,8 @@ def won?(board)
 end
 
 def full?(board)
-  full = board.all? do |value|
-    value == "X" || value == "O"
+  board.all? do |value|
+    
   end
 end
 
-
-  
-=======
-  WIN_COMBINATIONS.each do |first_row_array|
-    win_index_1 = first_row_array[0]
-    win_index_2 = first_row_array[1]
-    win_index_3 = first_row_array[2]
-    
-    position_1 = board[win_index_1]
-    position_2 = board[win_index_2]
-    position_3 = board[win_index_3]
-    
-    if position_taken?(board, win_index_1) == false || position_taken?(board, win_index_2) == false || position_taken?(board, win_index_3) == false
-      false
-    else
-      if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        return first_row_array
-      else
-        false
-      end
-    end
-  end
-end
->>>>>>> 0af30216fa30e886c3328c7572e8bab6d4facffb
